@@ -1,0 +1,19 @@
+{
+  "name": "sim",
+  "version": "1.0.1",
+  "description": "core simulation core for radars uavs for multiple defence suites",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "adityakaaltatva",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "redis": "^4.7.0"
+  }
+}
