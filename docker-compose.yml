@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  simulation:
+    build: ./simulation-core
+    ports:
+      - "5000:5000"
+
+  swarm:
+    build: ./swarm-controller
+    ports:
+      - "6000:6000"
+    depends_on:
+      - simulation
+
+  ui:
+    build: ./ui-dashboard
+    ports:
+      - "3000:80"
+    depends_on:
+      - simulation
+      - swarm
